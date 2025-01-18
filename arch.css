@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+.work-sans-font {
+  font-family: "Work Sans", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+/* header section */
+header{
+    background-color: rgba(255, 144, 14, 0.1);   
+   max-width: 1920px;
+    height: auto;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.brand{
+    font-weight: bold;
+    font-size: 3rem;
+}
+.nav-links{
+    display:flex ;
+    
+}
+.nav-items{
+    list-style:  none;
+    margin-left: 50px ;
+}
+.nav-link{
+    text-decoration: none;
+    color: rgba(66, 66, 66, 1);
+    font-weight: 600;
+    font-size: 18px;
+}
+.navbar,.banner{
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.banner{
+justify-items:center;
+}
+.bnr-content{
+    max-width: 862px;
+     margin-right: auto;
+     margin-left: auto;
+     text-align: center;
+}
+.bnr-h{
+    font-size: 4rem;
+    font-weight: bold;
+    padding-top: 30px;
+}
+.bnr-p{
+font-size: 1rem;
+font-weight: 400;
+color: rgba(114, 114, 114, 1);
+}
+.bnr-btn{
+    width: 180px;
+    height: 64px;
+    background-color: rgba(255, 144, 14, 1);
+    color:rgba(255, 255, 255, 1) ;
+    font-size: 20px;
+    font-weight: 700;
+    border-radius: 8px;
+    border: none;
+    margin-top: 32px;
+    margin-bottom: 50px ;
+}
+.bnr-img{
+    width: 100%;
+    height: auto;
+
+}
+/* Main section */
+main>section{
+    margin-top: 130px;
+}
+main{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.team-sec{
+    align-items: center;
+    display: flex;
+    
+}
+.team-img{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    
+}
+.team-desc{
+    margin-left: 130px;
+    max-width: 537px;
+}
+.s1{
+    color: rgba(114, 114, 114, 1);
+    font-weight: 600;
+    font-size: 2.8rem
+    ;
+}
+.s2{
+    color: rgba(19, 19, 19, 1);
+    font-size: 2.8rem;
+    font-weight: bold;
+}
+.s3{
+    color: rgba(255, 144, 14, 1);
+    font-size: 2.8rem ;
+    font-weight: bold
+    ;
+}
+    
+/* responsive media */
+@media screen and (max-width :576px){
+.navbar ,.nav-links, .team-sec{
+    flex-direction: column;
+}
+.team-img{
+    grid-template-columns: repeat(1 , 1fr);
+}
+.team-desc{
+    margin-left: 30px;
+}
+}
+@media screen and ( min-width:576px) and (max-width:992px){
+    .team-sec{
+        flex-direction: column;
+    }
+    .team-desc{
+        margin: 50px  auto;
+    }
+    
+}
+
+
